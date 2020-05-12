@@ -28,6 +28,7 @@ class TasksController < ApplicationController
     end
     
     def update
+      # binding.pry
       @task = Task.find(params[:id])
     
       if @task.update(task_params)
