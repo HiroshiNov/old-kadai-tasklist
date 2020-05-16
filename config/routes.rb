@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
+  # get 'sessions/new'
+  # get 'sessions/create'
+  # get 'sessions/destroy'
   # get 'users/index'
   # get 'users/show'
 
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'login', to: "sessions#new"
   post 'login', to: "sessions#create"
-  delete 'login', to: "sessions#destroy"
+  delete 'logout', to: "sessions#destroy"
 
   get 'signup', to: 'users#new'
   resources :tasks
